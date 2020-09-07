@@ -1,0 +1,113 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 24px;
+    background-color: white;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0px;
+}
+
+header .header__title {
+    text-transform: uppercase;
+    font-family: 'Concert One', cursive;
+    font-size: x-large;
+    color: black;
+    
+}
+
+/* content */
+
+/* footer */
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #2F3142;
+    color: white;
+    padding: 24px 12px;
+}
+
+footer .footer__title {
+    text-transform: uppercase;
+    font-family: 'Concert One', cursive;
+    font-size: xx-large;
+    color: white;
+    
+}
+
+footer .footer__menu {
+    display: flex;
+    flex-direction: column;
+    align-self: flex-start;
+    margin: 10px 0;
+}
+
+footer .footer__menu a {
+    font-family: 'Noto Sans KR', sans-serif;
+    color: white;
+    margin: 10px z 0;
+}
+
+footer .footer__icons {
+    margin: 16px 0;
+}
+
+footer .footer__icons a {
+    margin: 8px 12px;
+    border-radius: 50%;
+}
+
+footer .footer__icons i{
+    color: white;
+}
+
+footer .footer__icons i:hover{
+    color: skyblue;
+}
+
+footer .footer__info {
+    margin: 10px 0;
+}
+
+footer .footer__info p {
+    font-size: x-small;
+    font-family: 'Noto Sans KR', sans-serif;
+
+}
+
+
+@media screen and (min-width: 768px){
+    footer {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 24px 36px;
+    }
+
+    footer .footer__menu {
+        flex-direction: row;
+        justify-content: center;
+        align-self: center;
+    }
+
+    footer .footer__menu a {
+        margin-right: 10px;
+    }
+
+    footer .footer__info {
+        display: block;
+    }
+}
