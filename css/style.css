@@ -5,6 +5,7 @@
 
 a {
   text-decoration: none;
+  color: black;
 }
 
 /* header */
@@ -19,11 +20,35 @@ header {
   top: 0px;
 }
 
-header .header__title {
+header .header__title-link {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+}
+
+header .header__title-link .header__title {
   text-transform: uppercase;
   font-family: 'Concert One', cursive;
   font-size: x-large;
   color: black;
+  margin-right: 1.5em;
+}
+
+header .header__title-link .header__links {
+  display: none;
+}
+
+header .header__icon-login {
+  display: none;
+}
+
+header .header__icon-login i {
+  margin-right: 2em;
+}
+
+header .header__icon-login a {
+  margin-right: 2em;
+  font-family: 'Noto Sans KR', sans-serif;
 }
 
 /* content */
@@ -86,6 +111,27 @@ footer .footer__info p {
 }
 
 @media screen and (min-width: 768px) {
+  header .left-placer {
+    display: none;
+  }
+
+  header .header__title-link .header__links {
+    display: flex;
+  }
+
+  header .header__title-link .header__links a {
+    margin-left: 0.75em;
+    font-family: 'Noto Sans KR', sans-serif;
+  }
+
+  header .header__icon-login {
+    display: flex;
+  }
+
+  header .header__menu {
+    display: none;
+  }
+
   footer {
     flex-direction: row;
     justify-content: space-between;
