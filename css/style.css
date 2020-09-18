@@ -13,7 +13,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 16px 24px;
+  padding: 16px 0px;
   background-color: white;
   position: -webkit-sticky;
   position: sticky;
@@ -41,15 +41,6 @@ header .header__icon-login {
   display: none;
 }
 
-header .header__icon-login i {
-  margin-right: 2em;
-}
-
-header .header__icon-login a {
-  margin-right: 2em;
-  font-family: "Noto Sans KR", sans-serif;
-}
-
 /* content */
 
 /* footer */
@@ -60,7 +51,7 @@ footer {
   align-items: center;
   background-color: #2f3142;
   color: white;
-  padding: 24px 12px;
+  padding: 24px 0px;
 }
 
 footer .footer__title {
@@ -124,12 +115,40 @@ footer .footer__info p {
 
   header .header__title-link .header__links a {
     margin-left: 0.75em;
+
     font-family: "Noto Sans KR", sans-serif;
+  }
+
+  header .header__title-link .header__links a:hover {
+    color: #42a4ff;
   }
 
   header .header__icon-login {
     display: flex;
     justify-items: flex-end;
+  }
+
+  header .header__icon-login i {
+    color: gray;
+    padding: 0.75em;
+  }
+
+  header .header__icon-login a {
+    color: gray;
+    padding: 0.5em 0.75em;
+    font-family: "Noto Sans KR", sans-serif;
+  }
+
+  header .header__icon-login i:hover {
+    color: #42a4ff;
+    background-color: #eeeeee;
+    border-radius: 64px;
+  }
+
+  header .header__icon-login a:hover {
+    color: #42a4ff;
+    background-color: #f2f2f2;
+    border-radius: 32px;
   }
 
   header .header__menu {
@@ -140,7 +159,6 @@ footer .footer__info p {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    padding: 24px 36px;
   }
 
   footer .footer__menu {
