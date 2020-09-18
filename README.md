@@ -8,6 +8,7 @@
 
 - mobile일 때 title 정중앙으로 조정
   `PC일 때 margin right을 먹인게 mobile까지 적용되서 중앙이 안 맞았음`
+  `근데 padding을 전체 적용으로 왼쪽 줄 맞춰주니까 다시 안 맞아서 left placer의 width를 지정해서 맞춰줌`
 - PC일 때 search icon과 로그인/가입이 높이 맞추기
 - search icon, 로그인/회원가입 hover
 
