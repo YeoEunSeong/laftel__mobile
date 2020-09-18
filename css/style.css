@@ -28,10 +28,9 @@ header .header__title-link {
 
 header .header__title-link .header__title {
   text-transform: uppercase;
-  font-family: 'Concert One', cursive;
+  font-family: "Concert One", cursive;
   font-size: x-large;
   color: black;
-  margin-right: 1.5em;
 }
 
 header .header__title-link .header__links {
@@ -48,7 +47,7 @@ header .header__icon-login i {
 
 header .header__icon-login a {
   margin-right: 2em;
-  font-family: 'Noto Sans KR', sans-serif;
+  font-family: "Noto Sans KR", sans-serif;
 }
 
 /* content */
@@ -66,7 +65,7 @@ footer {
 
 footer .footer__title {
   text-transform: uppercase;
-  font-family: 'Concert One', cursive;
+  font-family: "Concert One", cursive;
   font-size: xx-large;
   color: white;
 }
@@ -79,7 +78,7 @@ footer .footer__menu {
 }
 
 footer .footer__menu a {
-  font-family: 'Noto Sans KR', sans-serif;
+  font-family: "Noto Sans KR", sans-serif;
   color: white;
   margin: 10px 0;
 }
@@ -107,12 +106,16 @@ footer .footer__info {
 
 footer .footer__info p {
   font-size: x-small;
-  font-family: 'Noto Sans KR', sans-serif;
+  font-family: "Noto Sans KR", sans-serif;
 }
 
 @media screen and (min-width: 768px) {
   header .left-placer {
     display: none;
+  }
+
+  header .header__title-link .header__title {
+    margin-right: 1.5em;
   }
 
   header .header__title-link .header__links {
@@ -121,11 +124,12 @@ footer .footer__info p {
 
   header .header__title-link .header__links a {
     margin-left: 0.75em;
-    font-family: 'Noto Sans KR', sans-serif;
+    font-family: "Noto Sans KR", sans-serif;
   }
 
   header .header__icon-login {
     display: flex;
+    justify-items: flex-end;
   }
 
   header .header__menu {

@@ -7,7 +7,9 @@
 ### 17sep20: 반응형으로 헤더 만드는 중
 
 - mobile일 때 title 정중앙으로 조정
+  `PC일 때 margin right을 먹인게 mobile까지 적용되서 중앙이 안 맞았음`
 - PC일 때 search icon과 로그인/가입이 높이 맞추기
+- 로그인/회원가입 hover
 
 ## 2. Add articles
 
