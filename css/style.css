@@ -6,7 +6,7 @@
 body header,
 article,
 footer {
-  padding: 0 1rem;
+  padding: 0 3.125rem;
 }
 
 a {
@@ -47,7 +47,6 @@ header .header__icon-login {
 /* content */
 
 /* footer */
-
 footer {
   display: flex;
   flex-direction: column;
@@ -58,52 +57,54 @@ footer {
   padding-bottom: 3rem;
 }
 
-footer .footer__title {
+footer .footer__top .footer__title-links .footer__title {
+  text-align: center;
   text-transform: uppercase;
   font-family: "Concert One", cursive;
   font-size: xx-large;
   color: white;
 }
 
-footer .footer__menu {
+footer .footer__top .footer__title-links .footer__links {
   display: flex;
   flex-direction: column;
-  align-self: flex-start;
-  margin: 10px 12px;
+  margin-top: 0.75em;
 }
 
-footer .footer__menu a {
+footer .footer__top .footer__title-links .footer__links a {
+  text-align: center;
   font-family: "Noto Sans KR", sans-serif;
   color: white;
-  margin: 10px 0;
+  margin: 0.5em 0;
 }
 
-footer .footer__icons {
-  margin: 16px 0;
+footer .footer__top .footer__icons {
+  margin: 2em 0;
 }
 
-footer .footer__icons a {
-  margin: 8px 12px;
+footer .footer__top .footer__icons a {
+  margin: 1em 1em;
 }
 
-footer .footer__icons i {
+footer .footer__top .footer__icons i {
+  font-size: 1.25rem;
   color: white;
 }
 
-footer .footer__icons i:hover {
+footer .footer__top .footer__icons i:hover {
   color: skyblue;
 }
 
 footer .footer__info {
-  margin: 10px 0;
+  margin: 1em 0em;
 }
 
 footer .footer__info p {
-  font-size: x-small;
+  font-size: small;
   font-family: "Noto Sans KR", sans-serif;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 846px) {
   header .left-placer {
     display: none;
   }
@@ -114,7 +115,7 @@ footer .footer__info p {
   }
 
   header .header__title-link .header__title {
-    margin-right: 1.5em;
+    margin-right: 1em;
   }
 
   header .header__title-link .header__links {
@@ -122,7 +123,7 @@ footer .footer__info p {
   }
 
   header .header__title-link .header__links a {
-    margin-left: 0.75em;
+    margin-left: 1.5em;
     font-family: "Noto Sans KR", sans-serif;
   }
 
@@ -143,11 +144,12 @@ footer .footer__info p {
   header .header__icon-login a {
     color: gray;
     padding: 0.5em 0.75em;
+    margin-left: 1em;
     font-family: "Noto Sans KR", sans-serif;
   }
 
   header .header__icon-login i:hover,
-  a:hover {
+  header .header__icon-login a:hover {
     color: skyblue;
     background-color: #eeeeee;
     border-radius: 64px;
@@ -159,22 +161,38 @@ footer .footer__info p {
 
   /* footer */
   footer {
-    flex-direction: row;
+    align-items: unset;
     justify-content: space-between;
-    align-items: center;
   }
 
-  footer .footer__menu {
+  footer .footer__top {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+
+  footer .footer__title-links {
+    display: flex;
+  }
+
+  footer .footer__top .footer__title-links .footer__links {
     flex-direction: row;
-    justify-content: center;
-    align-self: center;
+    align-items: flex-end;
+    margin-left: 3em;
   }
 
-  footer .footer__menu a {
-    margin-right: 10px;
+  footer .footer__top .footer__title-links .footer__links a {
+    margin: 0 0.5em;
+  }
+
+  footer .footer__top .footer__icons {
+    margin: 0em;
   }
 
   footer .footer__info {
-    display: block;
+    margin-top: 2.5em;
+  }
+  footer .footer__info p {
+    font-size: medium;
   }
 }
